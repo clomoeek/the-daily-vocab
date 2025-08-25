@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             } else if (currentEntry) {
                 if (line.startsWith('*')) {
-                    currentEntry.pos = line.substring(1, line.length - 2);
+                    currentEntry.pos = line.substring(1, line.length - 1);
                 } else if (line.startsWith('1.')) {
                     currentEntry.meaning1 = line.substring(0).trim();
                 } else if (line.startsWith('2.')) {
