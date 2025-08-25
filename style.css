@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Gowun Batang', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    flex: 1; /* Make container grow to fill available space */
+    margin-top: 2rem; /* Add space at the top */
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    max-width: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #222;
+    font-size: 2em;
+    margin-bottom: 20px; /* Adjusted from 50px */
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+h4 {
+    color: #777;
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#user-input {
+    width: 80%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 1.3em;
+    font-family: 'Gowun Batang', serif;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #888;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Gowun Batang', serif;
+    transition: all 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+button:hover {
+    background-color: #f9f9f9;
+    border-color: #bbb;
+}
+
+#submit-btn {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+#submit-btn:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    min-height: 24px; /* 피드백 메시지 공간 확보 */
+}
+
+.correct {
+    color: #28a745;
+}
+
+.incorrect {
+    color: #dc3545;
+}
+
+.progress-section {
+    margin-top: 10px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+#completion-container button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+#completion-container button:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        border-radius: 0;
+        min-height: 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #user-input {
+        font-size: 1.1em;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}

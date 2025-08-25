@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DAILY VOCAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="word-card">
+            <h1>THE DAILY VOCAB</h1>
+            <h2 id="word-meaning1"></h2>
+            <h2 id="word-meaning2"></h2>
+            <h2 id="word-meaning3"></h2>
+            <i><h4 id="word-pos"></h4></i>
+            <div class="question-section">
+                <h3 id="example-sentence"></h3>
+                <input type="text" id="user-input" placeholder="Fill the blank">
+                <div class="button-group">
+                    <button id="submit-btn">Submit</button>
+                    <button id="next-btn" style="display:none;">Next</button>
+                </div>
+            </div>
+            <div class="message-section">
+                <p id="feedback"></p>
+            </div>
+            <div class="progress-section">
+                <p>Attempts Left: <span id="attempts-left">3</span></p>
+                <p id="progress-indicator"></p>
+            </div>
+        </div>
+        <div id="completion-container" class="hidden">
+            <h1>Today's studies complete!</h1>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 eden02 Lab. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
